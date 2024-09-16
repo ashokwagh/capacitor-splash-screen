@@ -635,14 +635,14 @@ public class SplashScreen {
         }
 
         // Hide with Android 12 API
-        if (null != this.onPreDrawListener) {
-            this.isVisible = false;
-            if (null != content) {
-                content.getViewTreeObserver().removeOnPreDrawListener(this.onPreDrawListener);
-            }
-            this.onPreDrawListener = null;
-            return;
-        }
+        // if (null != this.onPreDrawListener) {
+        //     this.isVisible = false;
+        //     if (null != content) {
+        //         content.getViewTreeObserver().removeOnPreDrawListener(this.onPreDrawListener);
+        //     }
+        //     this.onPreDrawListener = null;
+        //     return;
+        // }
 
         isHiding = true;
 
